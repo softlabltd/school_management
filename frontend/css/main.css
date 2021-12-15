@@ -1,0 +1,836 @@
+i.fas.fa-caret-right {
+    color: #23d259;
+    font-size: 180%;
+}
+
+.des_title {
+    margin: 9px auto;
+    width: 65%;
+}
+
+.title {
+    font-size: 142%;
+    color: #666;
+    border-bottom: 1px dashed #666;
+}
+
+a.title:hover {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+body {
+    margin: 0;
+    direction: ltr;
+    font-family: Noto Sans Bengali;
+    font-size: 10pt;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    background: #cd1414 url(images/background.png);
+    color: #000000;
+}
+
+form#form1 {
+    background: url(background.png);
+}
+
+th {
+    font-size: 11px;
+}
+
+
+/* 	slider start */
+
+.slider {
+    height: 100%;
+}
+
+.slider_container .slider_items img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform: scaleX();
+    /* filter:grayscale() contrast(1); */
+}
+
+.slider_container {
+    position: relative;
+    height: 100%;
+}
+
+.slider_container .slider_items {
+    position: absolute;
+    opacity: 0;
+    transition: all 5s;
+    height: 100%;
+    width: 100%;
+}
+
+.slider_container .slider_items.active {
+    opacity: 1;
+}
+
+
+/* slider end */
+
+.toggle_menu {
+    display: none;
+}
+
+ul#wi970px {
+    display: none;
+}
+
+
+/*===========================================================						970px===========================================================*/
+
+@media (max-width: 950px) {
+    ul#wi970px {
+        margin-top: -700px !important;
+        transition: all 1s;
+        display: block;
+    }
+    ul#wi970px.block_menu {
+        margin-top: -11px !important;
+    }
+    .toggle_menu {
+        display: block;
+    }
+    ul#navmenu {
+        display: none !important;
+    }
+    ul#wi970px.block_menu {}
+    ul#wi970px {
+        margin: 0;
+        list-style: none;
+        float: left;
+        /*background-color: #F2F2F2;*/
+        background: #f2f2f2;
+        /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(#f0f0f0, #ffffff);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#f0f0f0, #ffffff);
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#f0f0f0, #ffffff);
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#f0f0f0, #ffffff);
+        /* Standard syntax */
+        width: 100%;
+        border-top: 1px dotted #cccccc;
+        border-bottom: 1px dotted #cccccc;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    ul#wi970px li {
+        margin: 0;
+        border: 0 none;
+        padding: 0;
+        float: none;
+        /*For Gecko*/
+        list-style: none;
+        position: relative;
+        /*height: 24px;*/
+        vertical-align: middle;
+        margin: 0 auto;
+    }
+    ul#wi970px ul {
+        margin: 0;
+        border: 0 none;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+        display: none;
+        /*top: 24px;   left: 0;*/
+        vertical-align: middle;
+    }
+    ul#wi970px ul li {
+        float: none;
+        /*For Gecko*/
+        display: block !important;
+        display: inline;
+        /*For IE*/
+    }
+    /* Root Menu */
+    ul#wi970px a {
+        width: 100% !important;
+        float: none !important;
+        /*For Opera*/
+        float: left;
+        /*For IE*/
+        display: block;
+        color: #000000;
+        font-family: Noto Sans Bengali;
+        font-size: 10pt;
+        font-weight: bold;
+        text-decoration: none;
+        border-right: 1px dotted #cccccc;
+        padding: 10px 0px 10px 0px;
+        transition: all 0.5s;
+    }
+    /* Root Menu Hover Persistence */
+    ul#wi970px a:hover,
+    ul#wi970px li:hover a,
+    ul#wi970px li.iehover a {
+        background-color: #06a3ff;
+        color: #ffffff;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    /* 2nd Menu */
+    ul#wi970px li:hover li a,
+    ul#wi970px li.iehover li a {
+        float: none;
+        background: #f2f2f2;
+        /* background: -webkit-linear-gradient(#F0F0F0, #FFFFFF); */
+        background: -o-linear-gradient(#f0f0f0, #ffffff);
+        background: -moz-linear-gradient(#f0f0f0, #ffffff);
+        /* background: linear-gradient(#F0F0F0, #FFFFFF); */
+        color: #000000;
+        /* border-bottom: 1px dotted #CCCCCC; */
+        /* border-left: 1px dotted #CCCCCC; */
+        text-align: left;
+        font-weight: bold;
+        /* padding-left: 10px; */
+    }
+    /* 2nd Menu Hover Persistence */
+    ul#wi970px li:hover li a:hover,
+    ul#wi970px li:hover li:hover a,
+    ul#wi970px li.iehover li a:hover,
+    ul#wi970px li.iehover li.iehover a {
+        background-color: transparent;
+        color: #06a3ff;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+    /* 3rd Menu */
+    ul#wi970px li:hover li:hover li a,
+    ul#wi970px li.iehover li.iehover li a {
+        float: none;
+        background-color: #58585a;
+        color: #ffffff;
+        top: 0;
+        left: 30px;
+        border-bottom: 1px solid #0ea3f3;
+    }
+    /* 3rd Menu Hover Persistence */
+    ul#wi970px li:hover li:hover li a:hover,
+    ul#wi970px li:hover li:hover li:hover a,
+    ul#wi970px li.iehover li.iehover li a:hover,
+    ul#wi970px li.iehover li.iehover li.iehover a {
+        background-color: #58585a;
+        color: #0ea3f3;
+        /*font-weight:bold;*/
+    }
+    /* 4th Menu */
+    ul#wi970px li:hover li:hover li:hover li a,
+    ul#wi970px li.iehover li.iehover li.iehover li a {
+        /*background: #1E5AE6 url(pictures/navmenu_back.gif) top left repeat-x;*/
+        color: #000000;
+        width: 100%;
+    }
+    /* 4th Menu Hover */
+    ul#wi970px li:hover li:hover li:hover li a:hover,
+    ul#wi970px li.iehover li.iehover li.iehover li a:hover {
+        /*background: #95B2F4;*/
+        color: #ffffff;
+    }
+    ul#wi970px ul ul,
+    ul#wi970px ul ul ul {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+    }
+    /* Do Not Move - Must Come Before display:block for Gecko */
+    ul#wi970px li:hover ul ul,
+    ul#wi970px li:hover ul ul ul,
+    ul#wi970px li.iehover ul ul,
+    ul#wi970px li.iehover ul ul ul {
+        display: none;
+    }
+    i.fas.fa-bars.toggle.btn {
+        background: #c1bdbd;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .toggle_menu_title.ml-5 {
+        font-size: 13px;
+        cursor: pointer;
+        margin-top: 6px;
+    }
+    .toggle_menu {
+        background: #f6f1f1;
+        overflow: hidden;
+        margin-bottom: 11px;
+    }
+    .block {
+        display: block !important;
+    }
+    .block1 {
+        display: block !important;
+    }
+    .block2 {
+        display: block !important;
+    }
+    .block3 {
+        display: block !important;
+    }
+    .block4 {
+        display: block !important;
+    }
+    .block5 {
+        display: block !important;
+    }
+    /* ul#wi970px li:hover ul, ul#wi970px ul li:hover ul, ul#wi970px ul ul li:hover ul, ul#wi970px li.iehover ul, ul#wi970px ul li.iehover ul, ul#wi970px ul ul li.iehover ul {    display: block;    background-color: #CCCCCC;    z-index: 10000;} */
+    ul#wi970px li ul li a {
+        margin-left: 30px;
+    }
+}
+
+
+/*===========================================================						970px===========================================================*/
+
+ul#navmenu {
+    margin: 0;
+    list-style: none;
+    float: left;
+    /*background-color: #F2F2F2;*/
+    background: #f2f2f2;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f0f0f0, #ffffff);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f0f0f0, #ffffff);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f0f0f0, #ffffff);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f0f0f0, #ffffff);
+    /* Standard syntax */
+    width: 100%;
+    border-top: 1px dotted #cccccc;
+    border-bottom: 1px dotted #cccccc;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+ul#navmenu li {
+    margin: 0;
+    border: 0 none;
+    padding: 0;
+    float: left;
+    /*For Gecko*/
+    display: inline;
+    list-style: none;
+    position: relative;
+    /*height: 24px;*/
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+ul#navmenu ul {
+    margin: 0;
+    border: 0 none;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: none;
+    position: absolute;
+    /*top: 24px;   left: 0;*/
+    vertical-align: middle;
+}
+
+ul#navmenu ul li {
+    float: none;
+    /*For Gecko*/
+    display: block !important;
+    display: inline;
+    /*For IE*/
+}
+
+
+/* Root Menu */
+
+ul#navmenu a {
+    float: none !important;
+    /*For Opera*/
+    float: left;
+    /*For IE*/
+    display: block;
+    color: #000000;
+    font-family: Noto Sans Bengali;
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+    border-right: 1px dotted #cccccc;
+    padding: 10px 0px 10px 0px;
+}
+
+
+/* Root Menu Hover Persistence */
+
+ul#navmenu a:hover,
+ul#navmenu li:hover a,
+ul#navmenu li.iehover a {
+    background-color: #06a3ff;
+    color: #ffffff;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+/* 2nd Menu */
+
+ul#navmenu li:hover li a,
+ul#navmenu li.iehover li a {
+    float: none;
+    background: #f2f2f2;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f0f0f0, #ffffff);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f0f0f0, #ffffff);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f0f0f0, #ffffff);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f0f0f0, #ffffff);
+    /* Standard syntax */
+    color: #000000;
+    border-bottom: 1px dotted #cccccc;
+    border-left: 1px dotted #cccccc;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+
+/* 2nd Menu Hover Persistence */
+
+ul#navmenu li:hover li a:hover,
+ul#navmenu li:hover li:hover a,
+ul#navmenu li.iehover li a:hover,
+ul#navmenu li.iehover li.iehover a {
+    background-color: transparent;
+    color: #06a3ff;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+/* 3rd Menu */
+
+ul#navmenu li:hover li:hover li a,
+ul#navmenu li.iehover li.iehover li a {
+    float: none;
+    background-color: #58585a;
+    color: #ffffff;
+    top: 0;
+    left: 30px;
+    border-bottom: 1px solid #0ea3f3;
+}
+
+
+/* 3rd Menu Hover Persistence */
+
+ul#navmenu li:hover li:hover li a:hover,
+ul#navmenu li:hover li:hover li:hover a,
+ul#navmenu li.iehover li.iehover li a:hover,
+ul#navmenu li.iehover li.iehover li.iehover a {
+    background-color: #58585a;
+    color: #0ea3f3;
+    /*font-weight:bold;*/
+}
+
+
+/* 4th Menu */
+
+ul#navmenu li:hover li:hover li:hover li a,
+ul#navmenu li.iehover li.iehover li.iehover li a {
+    /*background: #1E5AE6 url(pictures/navmenu_back.gif) top left repeat-x;*/
+    color: #000000;
+    width: 100%;
+}
+
+
+/* 4th Menu Hover */
+
+ul#navmenu li:hover li:hover li:hover li a:hover,
+ul#navmenu li.iehover li.iehover li.iehover li a:hover {
+    /*background: #95B2F4;*/
+    color: #ffffff;
+}
+
+ul#navmenu ul ul,
+ul#navmenu ul ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+
+/* Do Not Move - Must Come Before display:block for Gecko */
+
+ul#navmenu li:hover ul ul,
+ul#navmenu li:hover ul ul ul,
+ul#navmenu li.iehover ul ul,
+ul#navmenu li.iehover ul ul ul {
+    display: none;
+}
+
+ul#navmenu li:hover ul,
+ul#navmenu ul li:hover ul,
+ul#navmenu ul ul li:hover ul,
+ul#navmenu li.iehover ul,
+ul#navmenu ul li.iehover ul,
+ul#navmenu ul ul li.iehover ul {
+    display: block;
+    background-color: #cccccc;
+    z-index: 10000;
+}
+
+
+/*------------------------------- end code for menu --------------------------------*/
+
+@font-face {
+    font-family: "NikoshBAN";
+    src: url("/fonts/NikoshBAN.eot");
+    src: local("NikoshBAN"), url("/fonts/NikoshBAN.woff") format("woff"), url("/fonts/NikoshBAN.ttf") format("truetype"), url("/fonts/NikoshBAN.svg#NikoshBAN") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    direction: ltr;
+    font-family: Noto Sans Bengali;
+    font-size: 10pt;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    background: #ffffff url(images/background.png);
+    color: #000000;
+}
+
+#bodywrap {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    background-color: #ffffff;
+    width: 960px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 15px 0px #737272;
+    border-right: 15px solid white;
+    border-left: 15px solid white;
+}
+
+@media (max-width: 960px) {
+    #bodywrap {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #bodywrap {
+        width: 100%;
+    }
+}
+
+#header {
+    height: 220px;
+    margin: 0 0 0 0;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    /* Background Color Gradiant  */
+    background: #06a3ff;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ffffff, #06a3ff);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffffff, #06a3ff);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffffff, #06a3ff);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffffff, #06a3ff);
+    /* Standard syntax */
+    z-index: 1;
+}
+
+.institutionName {
+    font-family: Noto Sans Bengali;
+    font-size: 22pt;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px #000000, 3px 3px 2px #000000;
+}
+
+#maincont {
+    float: left;
+    display: inline;
+    background-color: #ffffff;
+    padding: 10px 0 10px 0;
+}
+
+#middlepanel {
+    padding: 0px;
+}
+
+#rightSidebar {
+    padding: 0px;
+    width: 89%;
+    margin: 0 auto;
+}
+
+#footer {
+    clear: both;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    /*background-color: #EBEBEB;*/
+    position: static;
+    border-top: 5px solid #737272;
+    /* Background Color Gradiant  */
+    background: #ebebeb;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ffffff, #ebebeb);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffffff, #ebebeb);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffffff, #ebebeb);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffffff, #ebebeb);
+    /* Standard syntax */
+}
+
+#footer strong {
+    color: #000000;
+}
+
+#footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.boxHeader {
+    border: none;
+    font-family: Noto Sans Bengali;
+    font-size: 11pt;
+    font-weight: bold;
+    background-color: #06a3ff;
+    color: #ffffff;
+    text-align: left;
+    vertical-align: middle;
+    padding: 5px 0px 5px 7px;
+    text-transform: none;
+}
+
+#box {
+    padding: 5px 0 5px 10px;
+    font-family: Noto Sans Bengali;
+    font-size: 10pt;
+}
+
+#box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#box li {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#box a:link {
+    text-decoration: none;
+}
+
+#box a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #06a3ff;
+    border-bottom: 1px solid #06a3ff;
+}
+
+#box li a {
+    padding-left: 10px;
+    background: url(images/img11.png) no-repeat left center;
+    color: #000000;
+    border-bottom: 1px dotted #cccccc;
+}
+
+.regularButton {
+    font-family: Noto Sans Bengali;
+    font-size: 10pt;
+    font-weight: normal;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    padding: 0px 0px 0px 0px;
+    height: 25px;
+    width: 50px;
+    border: 1px solid #cccccc;
+    background-color: #cccccc;
+}
+
+#backgroundGrad {
+    background: #f2f2f2;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f0f0f0, #ffffff);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f0f0f0, #ffffff);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f0f0f0, #ffffff);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f0f0f0, #ffffff);
+    /* Standard syntax */
+    border: 1px dotted #cccccc;
+}
+
+
+/*------------------------ Table Column Style --------------------------*/
+
+.columnStyleTop {
+    border: 1px solid #cccccc;
+    font-family: Noto Sans Bengali;
+    font-size: 11pt;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    /*color: #0C090A;*/
+    color: #000000;
+    padding: 0px 0 0 0;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    height: 5px;
+}
+
+.columnStyleLeft {
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    color: #000000;
+    font-family: Noto Sans Bengali;
+    font-size: 10pt;
+    text-align: right;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.columnStyleRight {
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    color: #0c090a;
+    text-align: left;
+    padding-left: 7px;
+}
+
+.columnStyleBottom {
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    color: #000000;
+    padding: 5px 0 5px 0;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.inputControl {
+    font-family: Noto Sans Bengali;
+    font-size: 10pt;
+    font-weight: normal;
+    color: #0c090a;
+    padding-left: 5px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.specialButton {
+    font-family: Century Gothic;
+    font-size: 11pt;
+    font-weight: bold;
+    color: #06a3ff;
+    cursor: pointer;
+    padding: 0px 0px 0px 0px;
+    height: 35px;
+    width: 75px;
+    border: 1px solid #06a3ff;
+    background-color: #ffffff;
+}
+
+.specialButton:hover {
+    font-family: Century Gothic;
+    font-size: 11pt;
+    font-weight: bold;
+    text-align: center;
+    color: #ff0000;
+    cursor: pointer;
+    padding: 0px 0px 0px 0px;
+    height: 35px;
+    width: 75px;
+    border: 1px solid #ff0000;
+    background-color: #ffffff;
+}
+
+.specialButton:focus {
+    font-family: Century Gothic;
+    font-size: 11pt;
+    font-weight: bold;
+    text-align: center;
+    color: #ff0000;
+    cursor: pointer;
+    padding: 0px 0px 0px 0px;
+    height: 35px;
+    width: 75px;
+    border: 1px solid #ff0000;
+    background-color: #ffffff;
+}
+
+.specialButtonDisable {
+    font-family: Tahoma;
+    font-size: 10.5pt;
+    text-align: center;
+    text-transform: none;
+    color: #0c090a;
+    padding: 0px 0px 0px 0px;
+    height: 30px;
+    width: 75px;
+    border: 1px solid #0c090a;
+}
+
+.gridViewHeaderStyle {
+    background-color: #f0f0f0;
+    /*font-family: Noto Sans Bengali;    font-size: 10pt;*/
+    border: 1px solid #cccccc;
+    border-bottom: 1px solid #ffffff;
+    color: #000000;
+}
+
+.gridViewItemStyle {
+    font-size: 10pt;
+    border: 1px solid #06a3ff;
+}
+
+hr.bacg {
+    background: #06a3ff;
+    padding: 1px;
+}
+
+.col-md-12.notice {
+    /* background: red; */
+    background: linear-gradient(to bottom, #ffffff 0%, #ebebeb 100%);
+}
+
+div#full_width {
+    margin-right: -1px !important;
+    margin-left: 0 !important;
+}

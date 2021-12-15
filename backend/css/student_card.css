@@ -1,0 +1,72 @@
+img.avater {
+    width: 100%;
+    height: 100%;
+}
+
+#captions {
+    width: 100%;
+}
+
+div#caption {
+    margin-top: 42px;
+    position: relative;
+    overflow: hidden;
+    width: 3000px;
+}
+
+.stu_pro {
+    position: absolute;
+    top: 58.9%;
+    width: 22.7%;
+    left: 13.2%;
+    height: 32.2%;
+    overflow: hidden;
+}
+
+.stu_d {
+    width: 48%;
+    top: 34%;
+    left: 53%;
+    position: absolute;
+    height: 66%;
+}
+
+.col-6.col_5 {
+    float: left;
+}
+
+.col-4.col_5 {
+    float: left;
+    font-size: 115px;
+    font-size: wi;
+    font-weight: 500;
+}
+
+.year.col-12 {
+    margin-left: 22%;
+    margin-top: -2%;
+    margin-bottom: 4%;
+}
+
+.col-6.col_5 {
+    font-size: 80px;
+    margin-bottom: 7%;
+}
+
+.col-6.col_5.text-right {
+    font-weight: 500;
+}
+
+img.sy {
+    width: 100%;
+    margin-top: -11%;
+}
+
+img.sp {
+    width: 57%;
+    margin-top: -4%;
+}
+
+img.spC {
+    margin-top: -5%;
+}
