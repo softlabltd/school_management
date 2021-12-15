@@ -1,0 +1,181 @@
+.inline {
+    width: 20%;
+}
+
+h3.pl-3 {
+    color: white;
+}
+
+.active {
+    background: #477eb9;
+}
+
+
+/*admin pannel*/
+
+h5.admin-school-section-title.mt-3 {
+    color: white;
+    float: right;
+}
+
+
+/* side bar */
+
+.click {
+    width: 24%;
+    float: left;
+    background-attachment: fixed;
+}
+
+i.fas.fa-bars {
+    font-size: 70px;
+    cursor: pointer;
+}
+
+.click.col-md-3 {
+    margin-top: 87px;
+    /* background: #244f7d; */
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+a.btn-success.administrator {
+    padding: 10px !important;
+    border-radius: 7px !important;
+    float: right !important;
+}
+
+font h3 {
+    float: left;
+}
+
+.col-md-9.body-bac {
+    background: #ddd;
+}
+
+.db-student-list.mt-5 {
+    background: #8cb38c;
+    border-radius: 14px;
+}
+
+i.fas.fa-pencil-alt {
+    color: forestgreen !important;
+}
+
+i.fas.fa-trash-alt {
+    color: red !important;
+}
+
+.click.highlight {
+    display: block;
+}
+
+.click {
+    display: block;
+}
+
+.colspan2 {
+    text-align: center;
+}
+
+section.view {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100000000;
+}
+
+.view_display {
+    background: white;
+    margin: 7% auto;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.6), 0 7px 28px 0 rgba(0, 0, 0, 0.6);
+}
+
+input[type="checkbox"] {
+    width: 100%;
+}
+
+input.width-100 {
+    width: 100% !important;
+}
+
+body {
+    background: #dddddd;
+}
+
+td {
+    font-size: 12px;
+}
+
+th {
+    font-size: 12px;
+}
+
+img.thumbnails {
+    width: 25%;
+}
+
+.view_displays {
+    /* background: white; */
+    margin: 0 auto;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.6), 0 7px 28px 0 rgba(0, 0, 0, 0.6);
+    margin-left: 12%;
+}
+
+.BG {
+    /* background: linear-gradient(50deg, #fcabab 5%, #3f2a20 10%, #ecd852 15%, #3a3f19 20%,#69ff2b 25%, #2a7150 30%, #54d8ec 35%, #295c73 40%, #7ea8e6 45%, #2e3062 50%, #a283ff 55%, #562866 60%,#ff91ec 65%, #561927 70%, #ff848a 75%, #3d131e 80%,#62e660 85%, #55236e 90%, #c0ff85 95%); */
+    background: linear-gradient(124deg, #bab486 8%, #807622 31%);
+}
+
+input#file-5 {
+    display: none;
+}
+
+label#stu_img {
+    width: 13%;
+    background: #408040;
+    border-radius: 22%;
+    color: #95f195;
+    /* font-weight: bold; */
+    cursor: pointer;
+}
+
+img#student_image {
+    /* position: absolute;*/
+    z-index: 10;
+    /* overflow: hidden; */
+    height: 76px;
+}
+
+input#pic {
+    display: none;
+}
+
+i#upload_icon {
+    font-size: 6pc;
+}
+
+.view_display.v {
+    background: #7f7f7f94;
+}
+
+span.col-md-5.mr-3.mt-3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+h3.col-md-12 {
+    color: white;
+    font-weight: bold;
+}
